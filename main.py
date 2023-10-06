@@ -4,9 +4,6 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    global c
-    global e
-    global data
     if request.method == 'POST':
         data = request.form.get('area')
         c = word_count(data)
