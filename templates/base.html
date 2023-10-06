@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Extractor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="parent">
+        <h2>Get your word count.</h2>
+        <form method="post">
+            <textarea name="area" placeholder="start typing...">{{ data }}</textarea>
+            <input type="submit" value="Check">
+            <div class="bottom">
+                <p class="op">words: <span>{{ c }}</span></p>
+                <p class="op">characters (without spaces): <span>{{ e }}</span></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="top">
+        <div><img src="/static/github-mark.png" class="big8"><span><a target="_blank"
+                    href="https://github.com/akanbiusman">akanbiusman</a></span></div>
+    </div>
+</body>
+
+</html>
